@@ -24,7 +24,7 @@ while (n <= A)
 }
 Console.WriteLine(Sum); */
 
-// 3. Возведите число А в натуральную степень B используя цикл
+/* // 3. Возведите число А в натуральную степень B используя цикл
 Console.Clear();
 Console.Write("Введите число А = ");
 int A = int.Parse(Console.ReadLine()!); 
@@ -38,6 +38,17 @@ while (counter <= B)
     itog = itog * A;
     counter++;
     }
-Console.WriteLine(itog);
-//
+Console.WriteLine(itog); */
 
+//Определить количество цифр в числе
+Console.Clear();
+Console.Write("Введите число = ");
+int num = int.Parse(Console.ReadLine()!); 
+
+int count = 0;
+while (num > 0)
+{
+    num = num / 10;
+    count++;
+}
+Console.WriteLine(count);
